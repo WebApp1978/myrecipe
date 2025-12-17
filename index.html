@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    
+
+    <!-- <script src="www.google.com" async defer></script> -->
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="form signup" id="form-signup">
+            <header>Signup</header>
+            <img id="google" src="assets/icons/google (1).png">
+            
+            <form action="#" id="form_signup" method="post">
+                <input type="text" id="name" placeholder="Full name" required />
+                <input type="email" id="email" placeholder="Email address" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="check">
+                    <p>Показати password</p>
+                </div>
+                <input type="submit" value="Signup" id="btn-signup" />
+            </form>
+        </div>
+        <div class="form login">
+            <header>Login</header>
+            <form action="#" id="form_signin" method="post">
+                <input type="text" id="email_logo" placeholder="Email address" required />
+                <input type="password" id="password_logo" placeholder="Password" required />
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="check1">
+                    <p>Показати password</p>
+                </div>
+                <input type="submit" value="Login" id="btn-sign" />
+            </form>
+            <p id="a">Forgot password?</p>
+        </div>
+    </section>
+    <dialog id="dialog">
+        <h2>Uwaga!!!</h2>
+        <p id="info"></p>
+        <p id="info-pl"></p>
+
+    </dialog>
+    <dialog id="dialog-info">
+        <h2 id="messenger"></h2>
+    </dialog>
+
+</body>
+<script type="module" src="scripts/firebaseauth.js"></script>
+<script>
+    const wrapper = document.querySelector(".wrapper");
+    const loginHeader = document.querySelector(".login header");
+    const signupHeader = document.querySelector('.signup header');
+    loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+    });
+    signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active")
+    });
+</script>
+
+</html>
