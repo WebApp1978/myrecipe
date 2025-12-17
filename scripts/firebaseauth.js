@@ -65,7 +65,7 @@ document.getElementById('google').addEventListener('click', e => {
 
 // /////////////////////////////////////////////
 document.getElementById('a').addEventListener('click', e => {
-    window.location.href = '/htmls/forgot.html'
+    window.location.href = 'htmls/forgot.html'
 })
 
 function openDialogInfo(params, pl) {
