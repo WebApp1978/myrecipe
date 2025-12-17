@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-content">
+            <header class="top-header">
+
+                <h2 class="title">Ksiazka przepisow</h2>
+                <img id="dot-vertical" src="../assets/icons/icons8-menu-vertical-50.png" alt="">
+                <div id="div-dot" class="div-dot">
+                    <ul>
+                        <li>
+                            <a href="add_recipe.html">Dodaj przepis</a>
+                        </li>
+                        <li>
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li>
+                            <a href="signout.html">Sign</a>
+                        </li>
+                        <li>
+                            <a href="#">Admin</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </header>
+
+            <div class="user">
+                <p>Witaj,</p>
+                <p id="user"></p>
+            </div>
+            <h3>Moje przepisy:</h3>
+            <div class="categores">
+                <select id="select" name="fruit">
+                    <option value="Wszystkie przepisy">Wszystkie przepisy</option>
+                    <option value="Pierwsze dania">Pierwsze dania</option>
+                    <option value="Drugie dania">Drugie dania</option>
+                    <option value="Ryby">Ryby</option>
+                    <option value="Przystawki">Przystawki</option>
+                    <option value="Salatki">Salatki</option>
+                    <option value="Ciasta">Ciasta</option>
+                    <option value="Desery">Desery</option>
+                    <option value="Drozrzdiowe">Drozrzdiowe</option>
+                    <option value="Inne">Inne</option>
+                </select>
+                <h4 id="info"></h4>
+            </div>
+        </div>
+
+        <div class="middle-content">
+            <div class="list-recipe" id="list-recipe">
+            </div>
+        </div>
+
+
+
+
+
+        <dialog class="delete-dialog" id="delete-dialog">
+            <p class="title-dialog-delete">Napewno wykasowac przepis???</p>
+            <h4 id="recipe" class="recipe_name"></h4>
+            <div class="dialog-actions">
+                <button class="button-85" id="btn-close">Odzuc</button>
+                <button class="button-85" id="btn-yes">Akceptuj</button>
+            </div>
+        </dialog>
+        <dialog id="edit-support-dialog">
+            <h2 class="title-support">Edytowanie </h2>
+            <input type="text" id="titleRecipe">
+            <input type="text" id="text-support">
+            <button class="button-85" id="btn-edit-support">Zapisz albo zamknij</button>
+        </dialog>
+        <dialog id="dialog-text-recipe">
+            <h3 id="name-recipe"></h3>
+            <div class="box-recipe-text" id="box-recipe-text">
+                <p id="block-text-recipe"></p>
+            </div>
+            <textarea name="" id="box-recipe-edit"></textarea>
+            <p id="text-messenger"></p>
+            <div class="box-buttons">
+                <button class="button-85" id="edit-recipe">Edytuj</button>
+                <button class="button-85" id="close-dialog-recipe">Zamknij</button>
+            </div>
+        </dialog>
+    </div>
+</body>
+<script type="module" src="../scripts/home.js"></script>
+
+</html>
