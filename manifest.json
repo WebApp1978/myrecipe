@@ -17,7 +17,7 @@
     ],
     "screenshots": [
     {
-      "src": "/myrecipe/assets/images/screenshot.png",
+      "src": "/myrecipe/assets/image/screenshot.png",
       "type": "image/png",
       "sizes": "918x2048",
       "form_factor": "wide"
