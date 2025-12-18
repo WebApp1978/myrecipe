@@ -33,11 +33,12 @@ onAuthStateChanged(auth, (user) => {
         create_list_recipe(userId)
         document.getElementById('user').innerText = user.displayName;
         console.log(auth.currentUser)
+         console.log(5555)
     }
 });
 
 window.addEventListener('load', e=>{
-    
+    console.log('load function')
 })
 
 
