@@ -32,7 +32,7 @@ onAuthStateChanged(auth, (user) => {
         userId = uid;
         create_list_recipe(userId)
         document.getElementById('user').innerText = user.displayName;
-        // console.log(auth.currentUser)
+        console.log(auth.currentUser)
     }
 });
 
