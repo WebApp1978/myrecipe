@@ -29,7 +29,7 @@ const info_pl = document.getElementById('info-pl');
 onAuthStateChanged(auth, (user) => {
     if (user) {
         // const uid = user.uid;
-        window.location.href = 'htmls/home.html'
+       // window.location.href = 'htmls/home.html'
         console.log(auth.currentUser)
     }
 });
